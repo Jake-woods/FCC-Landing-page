@@ -5,16 +5,124 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <!-- Font(s) -->
+   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
    <!-- Styles -->
    <link rel="stylesheet" href="css/normalize.css">
    <link rel="stylesheet" href="css/styles.css">
    <!-- Libraries -->
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-   <title>Visit Kruger</title>
+   <title>Visit</title>
 </head>
 
 <body>
+   <header id="header-nav">
+      <a href="#" id="brand">Visit <span>Alaska</span></a>
+      <button id="open-nav"><i class="fas fa-bars"></i></button>
+   </header>
+   <!-- End of header#header-nav -->
+   <nav id="main-nav">
+      <ul>
+         <li><a href="javascript:" class="close-nav"><i class="fas fa-times"></i></a></li>
+         <li><a href="#" class="border-bottom">Home</a></li>
+         <li><a href="#learn-more" class="border-bottom">Learn more</a></li>
+         <li class="last-child"><a href="#what-to-expect">What to expect</a></li>
+      </ul>
+   </nav>
+   <!-- End of nav#main-nav -->
+   <main>
+      <section id="banner">
+         <div class="inner">
+            <h1>Visit Alaska</h1>
+            <p>Magna amet tempus etiam lorem nisl consequat</p>
+            <a href="#learn-more">Read more</a>
+         </div>
+         <!-- End of div.inner -->
+      </section>
+      <!-- End of section#banner -->
+      <section id="learn-more">
+         <div class="container">
+            <h2 class="section-title">Planning your trip</h2>
+            <p>We’re sure a trip to Alaska will live up to your wildest dreams. And we look forward to welcoming you to
+               the Last Frontier.</p>
+            <div class="items">
+               <article class="item" title="Wildlife">
+                  <img src="./img/animal-animal-kingdom-animal-photography-839303.jpg" alt="">
+                  <div class="inner">
+                     <a href="https://www.tripadvisor.co.uk/Attraction_Products-g28923-zfg11873-Alaska.html" target="_blank"></a>
+                     <div class="text">
+                        <h3>Visit the Wildlife</h3>
+                     </div>
+                  </div>
+               </article>
+               <!-- End of article.item -->
+               <article class="item" title="Into the Country">
+                  <img src="./img/adventure-asphalt-california-533671.jpg" alt="">
+                  <div class="inner">
+                     <a href="https://www.tripadvisor.co.uk/Attractions-g28923-Activities-Alaska.html" target="_blank"></a>
+                     <div class="text">
+                        <h3>Hit the road</h3>
+                     </div>
+                  </div>
+               </article>
+               <!-- End of article.item -->
+               <article class="item" title="Stop and eat">
+                  <img src="./img/architecture-cafe-chair-1024359.jpg" alt="">
+                  <div class="inner">
+                     <a href="https://www.tripadvisor.co.uk/Restaurants-g28923-Alaska.html" target="_blank"></a>
+                     <div class="text">
+                        <h3>Get a bite</h3>
+                     </div>
+                  </div>
+               </article>
+               <!-- End of article.item -->
+            </div>
+            <!-- End of div.items -->
+         </div>
+         <!-- End of div.container -->
+      </section>
+      <!-- End of section#learn-more -->
+      <section id="what-to-expect">
+         <h2 class="section-title">What to expect</h2>
+         <div class="videos-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Iq0rZn8HFmQ?controls=0" frameborder="0"
+               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Fr3xuseMAEM?controls=0" frameborder="0"
+               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MfDrHd6eijI?controls=0" frameborder="0"
+               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/-6r81UOzIHg?controls=0" frameborder="0"
+               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/-VQJpKmvkzg?controls=0" frameborder="0"
+               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/RNZxILfJEK4?controls=0" frameborder="0"
+               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         </div>
+         <!-- End of div.videos-container -->
+      </section>
+      <!-- End of section#what-to-expect -->
 
+      <section id="contact">
+         <div class="container">
+            <h2 class="section-title">Newsletter sign up</h2>
+
+            <form>
+               <input type="email" placeholder="Email">
+               <input type="submit" value="Send message">
+            </form>
+         </div>
+         <!-- End of div.container -->
+      </section>
+      <!-- End of section#contact -->
+   </main>
+   <footer id="footer-social">
+      <ul>
+         <li><a href="https://twitter.com/alaskatravlnews" target="_blank"><i class="fab fa-twitter"></i></a></li>
+         <li><a href="https://www.facebook.com/travelalaska" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+         <li><a href="https://www.youtube.com/alaskatia" target="_blank"><i class="fab fa-youtube"></i></a></li>
+         <li><a href="https://www.instagram.com/travelalaska" target="_blank"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+   </footer>
    <script src="./js/script.js"></script>
 </body>
 
