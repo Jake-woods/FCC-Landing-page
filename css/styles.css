@@ -268,7 +268,7 @@ section#learn-more .items .item:hover img {
 }
 
 section#learn-more .items .item:hover .inner {
-  opacity: 1;
+  opacity: 0;
 }
 
 section#learn-more .items .item img {
@@ -283,7 +283,7 @@ section#learn-more .items .item img {
 
 section#learn-more .items .item .inner {
   background: rgba(0, 0, 0, 0.63);
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
   position: absolute;
