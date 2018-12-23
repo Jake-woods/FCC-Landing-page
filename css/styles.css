@@ -445,9 +445,10 @@ footer#footer-social ul li a:hover {
   section#learn-more .items .item {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    margin: 1em 0;
   }
   section#learn-more .items .item img {
-    min-height: 15em;
+    height: 25em;
   }
   section#what-to-expect .videos-container {
     -ms-grid-columns: (1fr)[2];
