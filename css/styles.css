@@ -233,17 +233,6 @@ section#learn-more h2::after {
   width: 13em;
 }
 
-section#learn-more p {
-  color: #555;
-  font-size: .9rem;
-  letter-spacing: .125em;
-  line-height: 1.65;
-  margin: auto;
-  margin-top: .5em;
-  text-transform: uppercase;
-  width: 70%;
-}
-
 section#learn-more .items {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -236,17 +236,6 @@ section#learn-more {
       @include borderBottom();
    }
 
-   p {
-      color: #555;
-      font-size: .9rem;
-      letter-spacing: .125em;
-      line-height: 1.65;
-      margin: auto;
-      margin-top: .5em;
-      text-transform: uppercase;
-      width: 70%;
-   }
-
    .items {
       display: flex;
       flex-flow: row nowrap;
