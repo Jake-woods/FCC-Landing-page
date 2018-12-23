@@ -32,6 +32,7 @@ ul {
   font-size: 1.85rem;
   font-weight: 300;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 section {
@@ -165,6 +166,7 @@ section#banner {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow: hidden;
   min-height: 40em;
   text-align: center;
 }
@@ -182,9 +184,13 @@ section#banner .inner h1 {
   display: flex;
   font-size: 3rem;
   font-weight: 400;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   line-height: 1;
   margin: .25em 0;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 section#banner .inner h1::before, section#banner .inner h1::after {
@@ -396,7 +402,7 @@ section#contact form input[type=submit]:hover {
 }
 
 footer#footer-social {
-  background: #f4f4f4;
+  background: #fff;
   border-top: 1px solid rgba(51, 51, 51, 0.308);
   padding: .75em;
 }
@@ -424,5 +430,58 @@ footer#footer-social ul li a {
 
 footer#footer-social ul li a:hover {
   color: #444;
+}
+
+@media (max-width: 65em) {
+  section {
+    padding: 4em 1em;
+  }
+  section#learn-more .items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  section#learn-more .items .item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  section#learn-more .items .item img {
+    min-height: 15em;
+  }
+  section#what-to-expect .videos-container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  section#contact form {
+    max-width: 70%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  section#contact form input {
+    border: 1px solid rgba(51, 51, 51, 0.37) !important;
+  }
+  section#contact form input[type=submit],
+  section#contact form input[type=email] {
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 43em) {
+  section#banner .inner h1 {
+    font-size: 2rem;
+  }
+  section#banner .inner p {
+    font-size: 1rem;
+  }
+  section#what-to-expect .videos-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  section#contact form {
+    max-width: 100%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
