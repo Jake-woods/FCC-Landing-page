@@ -47,10 +47,24 @@
       .inner {
          h1 {
             font-size: 2rem;
+
+            &::before,
+            &::after {
+               background: #fff;
+               content: '';
+               display: inline-block;
+               height: 0;
+               margin: 0;
+               width: 0;
+            }
          }
 
          p {
             font-size: 1rem;
+         }
+
+         a {
+            margin-top: 1em;
          }
       }
    }
@@ -64,6 +78,17 @@
    section#contact {
       form {
          max-width: 100%;
+      }
+   }
+
+   footer#footer-social {
+      ul {
+         justify-content: space-between;
+         padding: 0;
+
+         li {
+            margin: 0;
+         }
       }
    }
 }
